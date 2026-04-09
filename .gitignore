@@ -1,0 +1,35 @@
+# Archivos y carpetas de Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+*.egg-info/
+.python-version
+
+# Entornos virtuales
+venv/
+env/
+.venv/
+
+# Archivos de base de datos local
+*.sqlite3
+
+# Archivos de configuración o secretos
+.env
+*.log
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Archivos estáticos o de compilación
+staticfiles/
+media/
+node_modules/
+dist/
+build/
+
+# Archivos temporales o de IDE
+.idea/
+.vscode/
