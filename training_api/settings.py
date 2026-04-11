@@ -44,7 +44,16 @@ INSTALLED_APPS = [
 
 ]
 
-REST_FRAMEWORK={}
+REST_FRAMEWORK={
+
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.IsAuthenticated',
+    ],
+
+    'DEFAULT_AUTHENTICATION_CLASSES':[
+        'rest_framework_simplejwt.authentication.JWTAuthentication'
+    ]
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -125,3 +134,14 @@ STATIC_URL = 'static/'
 
 
 AUTH_USER_MODEL= 'users.CustomUser'
+
+SWAGGER_SETTINGS = {
+    'SECURITY_DEFINITIONS':{
+        'api_key':{
+            'type': 'apiKey',
+            'in':'header',
+            'name':'Authorization'
+        }
+    },
+}
+
