@@ -1,0 +1,27 @@
+
+
+
+
+
+python3 manage.py runserver
+
+# Realizar migración al hacer un nuevo modelo o modificación
+
+python3 manage.py makemigrations
+
+python3 manage.py migrate
+
+# Comandos para ver migraciones, reversar y/o eliminar
+
+python3 manage.py
+python3 manage.py
+python3 manage.py
+python3 manage.py migrate Zero
+
+# Crear super usuario django-admin
+
+python3 manage.py createsuperuser
+
+# Registrar app en admin.py
+
+admin.site.register(mi_app)
