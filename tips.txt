@@ -41,3 +41,12 @@ python3 manage.py shell
 # librería Swagger
 pip install drf-yasg
 ** agregar al installed_apps
+
+# Gestion de usuarios
+crear app usuarios
+
+**Agregar en settings
+
+registrar  en installed_apps
+AUTH_USER_MODEL= 'users.CustomUser'
+
