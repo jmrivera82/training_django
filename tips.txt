@@ -23,5 +23,21 @@ python3 manage.py migrate Zero
 python3 manage.py createsuperuser
 
 # Registrar app en admin.py
-
+* prevamente se debe importar el modelo *
 admin.site.register(mi_app)
+
+# interactuar con ORM
+
+# Para acceder al shell
+python3 manage.py shell
+
+** from mi_app.models import modelo
+** objeto1 = Modelo("atributos"="xxxx")
+** objeto1.save()
+
+** Modelo.objects.all()
+** Modelo.objects.get(id=1)
+
+# librería Swagger
+pip install drf-yasg
+** agregar al installed_apps
