@@ -54,3 +54,5 @@ AUTH_USER_MODEL= 'users.CustomUser'
 #Autenticación en api rest
 pip install djangorestframework-simplejwt
 
+**decoradores
+
